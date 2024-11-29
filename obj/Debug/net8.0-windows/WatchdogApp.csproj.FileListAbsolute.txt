@@ -1,0 +1,14 @@
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\bin\Debug\net8.0-windows\WatchdogApp.exe
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\bin\Debug\net8.0-windows\WatchdogApp.deps.json
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\bin\Debug\net8.0-windows\WatchdogApp.runtimeconfig.json
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\bin\Debug\net8.0-windows\WatchdogApp.dll
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\bin\Debug\net8.0-windows\WatchdogApp.pdb
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.AssemblyInfoInputs.cache
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.AssemblyInfo.cs
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.csproj.CoreCompileInputs.cache
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.dll
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\refint\WatchdogApp.dll
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.pdb
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.genruntimeconfig.cache
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\ref\WatchdogApp.dll

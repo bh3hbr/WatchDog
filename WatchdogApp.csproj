@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>icon\watchDog_ico.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <Title>看门狗</Title>
+    <Authors>郭强（Kevin）</Authors>
+    <Company>新途径数科</Company>
+    <Product />
+    <PackageIcon>watchDog.png</PackageIcon>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon\watchDog_ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon\watchDog_ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon\watchDog.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="icon\watchDog_ico.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon\watchDog.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

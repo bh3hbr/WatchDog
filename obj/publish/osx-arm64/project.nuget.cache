@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "yJkmPYW1Ieo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\onlysilence\\source\\repos\\HotelHelper\\WatchdogApp\\WatchdogApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\onlysilence\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+    "C:\\Users\\onlysilence\\.nuget\\packages\\microsoft.netcore.app.runtime.osx-arm64\\8.0.8\\microsoft.netcore.app.runtime.osx-arm64.8.0.8.nupkg.sha512",
+    "C:\\Users\\onlysilence\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.osx-arm64\\8.0.8\\microsoft.aspnetcore.app.runtime.osx-arm64.8.0.8.nupkg.sha512",
+    "C:\\Users\\onlysilence\\.nuget\\packages\\microsoft.netcore.app.host.osx-arm64\\8.0.8\\microsoft.netcore.app.host.osx-arm64.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
