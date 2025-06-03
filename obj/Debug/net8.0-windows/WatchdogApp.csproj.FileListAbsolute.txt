@@ -12,3 +12,5 @@ C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windo
 C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.pdb
 C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.genruntimeconfig.cache
 C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\ref\WatchdogApp.dll
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.sourcelink.json
+C:\Users\onlysilence\source\repos\HotelHelper\WatchdogApp\obj\Debug\net8.0-windows\WatchdogApp.g.resources
