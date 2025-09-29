@@ -1,7 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -17,27 +17,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="icon\watchDog_ico.ico" />
+    <EmbeddedResource Include="icon\watchDog_ico.ico" />
+    <EmbeddedResource Include="icon\watchDog.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="icon\watchDog_ico.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="icon\watchDog.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="icon\watchDog_ico.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="icon\watchDog.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

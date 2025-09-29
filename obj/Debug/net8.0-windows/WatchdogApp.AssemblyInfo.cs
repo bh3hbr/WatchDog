@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("新途径数科")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad5e6b7cb363bfb5e8a4b0624ef7abdc467567f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d93f0d3b2331025868389c3023923d1fa2b08015")]
 [assembly: System.Reflection.AssemblyProductAttribute("WatchdogApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WatchdogApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
