@@ -1,0 +1,10 @@
+# Visual Studio 生成的临时文件
+.vs/
+*.user
+*.suo
+*.vscode/
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+.DS_Store

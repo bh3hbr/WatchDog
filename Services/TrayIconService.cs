@@ -1,11 +1,5 @@
 using System.Diagnostics;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Threading.Tasks;
-using System.Threading;
-using System.IO;
 using System.Reflection;
-using System.Diagnostics;
 
 namespace WatchdogApp.Services
 {
@@ -176,8 +170,8 @@ namespace WatchdogApp.Services
         /// <returns>工具提示文本</returns>
         private string GetTrayTooltipText()
         {
-            return string.Format("看门狗服务\n监控: {0}\n检查间隔: {1}ms", 
-                                _monitoredProcessName, 
+            return string.Format("看门狗服务\n监控: {0}\n检查间隔: {1}ms",
+                                _monitoredProcessName,
                                 _checkInterval);
         }
 
@@ -187,8 +181,8 @@ namespace WatchdogApp.Services
         /// <returns>监控状态文本</returns>
         private string GetMonitoringStatusText()
         {
-            return string.Format("服务正在运行中\n\n监控程序: {0}\n检查间隔: {1}毫秒", 
-                                _monitoredProcessName, 
+            return string.Format("服务正在运行中\n\n监控程序: {0}\n检查间隔: {1}毫秒",
+                                _monitoredProcessName,
                                 _checkInterval);
         }
 
@@ -275,7 +269,7 @@ namespace WatchdogApp.Services
                 Assembly assembly = Assembly.GetExecutingAssembly();
                 string assemblyName = assembly.GetName().Name;
                 string icoResourceName = $"{assemblyName}.icon.watchDog_ico.ico";
-                
+
                 using (Stream icoStream = assembly.GetManifestResourceStream(icoResourceName))
                 {
                     if (icoStream != null)
@@ -283,7 +277,7 @@ namespace WatchdogApp.Services
                         return new Icon(icoStream);
                     }
                 }
-                
+
                 return null;
             }
             catch
@@ -300,18 +294,18 @@ namespace WatchdogApp.Services
         public void Dispose()
         {
             // 取消事件订阅
-                if (_showLogMenuItem != null && _showLogClickHandler != null)
-                {
-                    _showLogMenuItem.Click -= _showLogClickHandler;
-                }
-                if (_exitMenuItem != null && _exitClickHandler != null)
-                {
-                    _exitMenuItem.Click -= _exitClickHandler;
-                }
-                if (_aboutMenuItem != null && _aboutClickHandler != null)
-                {
-                    _aboutMenuItem.Click -= _aboutClickHandler;
-                }
+            if (_showLogMenuItem != null && _showLogClickHandler != null)
+            {
+                _showLogMenuItem.Click -= _showLogClickHandler;
+            }
+            if (_exitMenuItem != null && _exitClickHandler != null)
+            {
+                _exitMenuItem.Click -= _exitClickHandler;
+            }
+            if (_aboutMenuItem != null && _aboutClickHandler != null)
+            {
+                _aboutMenuItem.Click -= _aboutClickHandler;
+            }
             if (_notifyIcon != null && _doubleClickHandler != null)
             {
                 _notifyIcon.DoubleClick -= _doubleClickHandler;

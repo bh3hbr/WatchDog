@@ -1,10 +1,5 @@
-﻿using System;
-using System.Diagnostics;
-using System.Windows.Forms;
-using System.Threading;
+﻿using System.Diagnostics;
 using WatchdogApp.Services;
-using System.IO;
-using System.Reflection;
 
 class Watchdog
 {
@@ -33,7 +28,7 @@ class Watchdog
             {
                 processName = args[0];
                 processPath = args[1];
-                
+
                 if (args.Length >= 3 && !int.TryParse(args[2], out checkInterval))
                 {
                     LogMessage("间隔时间格式错误，使用默认值: 5000 毫秒。");
@@ -46,12 +41,12 @@ class Watchdog
                 string helpMessage = "看门狗必须通过参数打开。\n\n" +
                                     "用法1: WatchdogApp.exe <进程名> <进程路径> [<间隔时间>]\n" +
                                     "用法2: WatchdogApp.exe STOP (停止看门狗)";
-                
+
                 LogMessage(helpMessage);
-                
+
                 // 使用封装的MessageBoxHelper显示带自定义图标的消息框
                 MessageBoxHelper.Show(helpMessage, "看门狗提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
                 // 用户确认后退出程序
                 // return;
             }
@@ -172,11 +167,11 @@ class Watchdog
         // 创建日志目录
         string logDir = Path.Combine(AppContext.BaseDirectory, "logs");
         Directory.CreateDirectory(logDir);
-        
+
         // 写入日志文件
         string logFile = Path.Combine(logDir, $"watchdog_{DateTime.Now:yyyy-MM-dd}.log");
         string logEntry = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {message}";
-        
+
         try
         {
             File.AppendAllText(logFile, logEntry + Environment.NewLine);

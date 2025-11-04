@@ -1,2 +1,0 @@
-C:\packages\WatchdogApp.pdb
-C:\packages\WatchdogApp.exe

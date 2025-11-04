@@ -1,28 +1,46 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <ApplicationIcon>icon\watchDog_ico.ico</ApplicationIcon>
-    <SignAssembly>False</SignAssembly>
-    <Title>看门狗</Title>
-    <Authors>郭强（Kevin）</Authors>
-    <Company>新途径数科</Company>
-    <Product />
-	<UseWindowsForms>true</UseWindowsForms>
-    <PackageIcon>watchDog.png</PackageIcon>
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
-  <ItemGroup>
-    <EmbeddedResource Include="icon\watchDog_ico.ico" />
-    <EmbeddedResource Include="icon\watchDog.png" />
-  </ItemGroup>
+		<ApplicationIcon>icon\watchDog_ico.ico</ApplicationIcon>
+		<SignAssembly>false</SignAssembly>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+		<Title>看门狗</Title>
+		<Authors>郭强（Kevin）</Authors>
+		<Company>新途径数科</Company>
+		<Product>看门狗</Product>
+
+		<!-- 平台设置 -->
+		<Platforms>x86</Platforms>
+		<PlatformTarget>x86</PlatformTarget>
+	</PropertyGroup>
+
+	<!-- Debug 配置 -->
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+		<OutputPath>bin\x86\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<Optimize>false</Optimize>
+	</PropertyGroup>
+
+	<!-- Release 配置 -->
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+		<OutputPath>bin\x86\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<Optimize>true</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="icon\watchDog_ico.ico" />
+		<EmbeddedResource Include="icon\watchDog.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Services\" />
+	</ItemGroup>
 
 </Project>
